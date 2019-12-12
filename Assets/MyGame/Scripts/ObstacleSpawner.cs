@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
-    public GameObject obstacle;
+   public GameObject[] obstacles;
+
     public bool gameOver = false;
+
+    public float minSpawnTime, maxSpawnTime;
 
 
 
@@ -23,11 +26,15 @@ public class ObstacleSpawner : MonoBehaviour
 
     IEnumerator Spawn()
     {
-        float waitTime = 0.5f;
+        float waitTime = 1f;
+
+        yield return new WaitForSeconds (waitTime);
 
         while (!gameOver)
         {
             SpawnObstacle();
+            
+            waitTime = Random.Range(minSpawnTime,maxSpawnTime);
 
             yield return new WaitForSeconds(waitTime);
         }
@@ -35,6 +42,8 @@ public class ObstacleSpawner : MonoBehaviour
 
     void SpawnObstacle()
     {
-        Instantiate(obstacle,transform.position,Quaternion.identity);
+        int random = Random.Range(0,obstacles.Length);
+
+        Instantiate(obstacles[random],transform.position,Quaternion.identity);
     }
 }

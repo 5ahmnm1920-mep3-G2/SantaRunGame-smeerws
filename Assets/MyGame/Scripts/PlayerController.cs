@@ -51,4 +51,12 @@ public class PlayerController : MonoBehaviour
             grounded = true;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Obstacle")
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }
