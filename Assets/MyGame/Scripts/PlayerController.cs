@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
         rb.velocity = Vector2.up * jumpForce;
 
         anim.SetTrigger("Jump");
+
+        GameManager.instance.IncrementScore();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

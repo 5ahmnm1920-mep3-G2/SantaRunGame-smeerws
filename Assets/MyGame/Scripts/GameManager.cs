@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance;
     public GameObject gameOverPanel;
+    public Text scoreText;
+    int score =0;
 
 
 
@@ -56,5 +59,11 @@ public class GameManager : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("MenuScene");
+    }
+
+    public void IncrementScore()
+    {
+        score++;
+        scoreText.text = score.ToString();
     }
 }
