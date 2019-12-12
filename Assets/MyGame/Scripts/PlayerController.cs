@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Obstacle")
         {
+            GameManager.instance.GameOver();
             Destroy(collision.gameObject);
             anim.Play("SantaDeath");
         }

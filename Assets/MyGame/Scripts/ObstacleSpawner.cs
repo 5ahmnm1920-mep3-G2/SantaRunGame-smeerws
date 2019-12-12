@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
-   public GameObject[] obstacles;
+    public static ObstacleSpawner instance;
+
+    public GameObject[] obstacles;
 
     public bool gameOver = false;
 
     public float minSpawnTime, maxSpawnTime;
 
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
