@@ -695,11 +695,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crystal
       objectReference: {fileID: 0}
-    - target: {fileID: 6588590742398308340, guid: de276576b59ca724289f73d74cc94be5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4455324155826786281, guid: de276576b59ca724289f73d74cc94be5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -768,11 +763,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: IceBox
-      objectReference: {fileID: 0}
-    - target: {fileID: 4165715350967558906, guid: 96d2743541ddb1846a6fd19d0e26d952,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1134906909462754320, guid: 96d2743541ddb1846a6fd19d0e26d952,
         type: 3}
@@ -843,11 +833,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate
       objectReference: {fileID: 0}
-    - target: {fileID: 5912569884782228329, guid: 3f2d54ec500f2d84da76b77af4132c29,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1867732311822061374, guid: 3f2d54ec500f2d84da76b77af4132c29,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -917,11 +902,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
-    - target: {fileID: 8412382045849161300, guid: 3e92429c9dc65944bb2f4ec05f387319,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 100127703330570412, guid: 3e92429c9dc65944bb2f4ec05f387319,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -990,11 +970,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SnowMan
-      objectReference: {fileID: 0}
-    - target: {fileID: 1557792003141734171, guid: e97900592fb216b4aa2adcde80a9054e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9112996265806781862, guid: e97900592fb216b4aa2adcde80a9054e,
         type: 3}
