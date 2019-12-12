@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager instance;
+    public GameObject gameOverPanel;
+
+
 
     private void Awake()
     {
@@ -31,6 +34,7 @@ public class GameManager : MonoBehaviour
     {
         ObstacleSpawner.instance.gameOver = true;
         StopScrolling();
+        gameOverPanel.SetActive(true);
     }
 
     void StopScrolling()
