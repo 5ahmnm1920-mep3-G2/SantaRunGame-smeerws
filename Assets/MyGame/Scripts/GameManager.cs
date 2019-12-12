@@ -30,5 +30,16 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         ObstacleSpawner.instance.gameOver = true;
+        StopScrolling();
+    }
+
+    void StopScrolling()
+    {
+        TextureScroll[] scrollingObjects = FindObjectsOfType<TextureScroll>();
+
+        foreach(TextureScroll item in scrollingObjects)
+        {
+            item.scroll = false;
+        }
     }
 }
