@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpForce;
 
     bool grounded;
+    bool gameOver = false;
 
     private void Awake()
     {
@@ -26,7 +27,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && !gameOver)
         {
             if (grounded)
             {
@@ -59,6 +60,7 @@ public class PlayerController : MonoBehaviour
             GameManager.instance.GameOver();
             Destroy(collision.gameObject);
             anim.Play("SantaDeath");
+            gameOver = true;
         }
     }
 }
