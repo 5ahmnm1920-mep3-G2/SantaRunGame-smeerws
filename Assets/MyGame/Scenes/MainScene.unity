@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 1415365221}
   - component: {fileID: 1415365225}
   - component: {fileID: 1415365224}
+  - component: {fileID: 1415365226}
   m_Layer: 0
   m_Name: Santa
   m_TagString: Untagged
@@ -562,6 +563,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1415365226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415365220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba726e35835f2c44f8219b9e42b54f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 6
 --- !u!1 &1875112148
 GameObject:
   m_ObjectHideFlags: 0
