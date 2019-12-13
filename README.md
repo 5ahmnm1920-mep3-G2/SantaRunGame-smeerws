@@ -18,7 +18,7 @@ WebGl and Standalone, RefRes: 1920 * 1080
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2C74XxBkFfI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[![SANTA RUN](http://i.imgur.com/Ot5DWAW.png)](https://www.youtube.com/embed/2C74XxBkFfI "Santa RUN")
+[![SANTA RUN](https://i9.ytimg.com/vi/2C74XxBkFfI/mq1.jpg?sqp=CNWnze8F&rs=AOn4CLBrmO-tJ3gQ2BNeMxvrmQcsIhhcgQ)](https://www.youtube.com/embed/2C74XxBkFfI "Santa RUN")
 
 ### Necessary setup/execution steps: 
 For playing the game go to: 
