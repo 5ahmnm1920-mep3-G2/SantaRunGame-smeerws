@@ -4,31 +4,42 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    Rigidbody2D rb;
-    [SerializeField] private float moveSpeed;
+Rigidbody2D rb;
+[SerializeField] private float MoveSpeed;
 
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+private void Awake()
+{
+    rb = GetComponent<Rigidbody2D>();
+}
 
-    // Start is called before the first frame update
-    void Start()
-    {
+// Start is called before the first frame update
+void Start()
+{
         
-    }
+}
 
-    // Update is called once per frame
-    void Update()
+// Update is called once per frame
+void Update()
+{
+    //if obstacle's position x is < -15f it will be destroyed
+    if(transform.position.x < -15f)
     {
-        if(transform.position.x < -15f)
+        Destroy(gameObject);
+}
+        //if obstacle's position x is < -15f it will be destroyed
+        if (transform.position.x > 15f)
         {
             Destroy(gameObject);
         }
+
     }
 
-    private void FixedUpdate()
-    {
-        rb.velocity = Vector2.left * moveSpeed;
-    }
+
+
+private void FixedUpdate()
+{
+
+    rb.velocity = Vector2.left * MoveSpeed;
+
+}
 }
